@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Casos de Factoreo</title>
+
+<link rel="stylesheet" href="dist/reset.css">
+<link rel="stylesheet" href="dist/reveal.css">
+<link rel="stylesheet" href="dist/theme/black.css">
+
+<style>
+
+:root{
+    --azul:#00c6ff;
+    --morado:#8e2de2;
+    --verde:#00f260;
+    --amarillo:#ffd200;
+}
+
+.reveal{
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg,#141e30,#243b55);
+}
+
+.reveal h1{
+    color:#00c6ff;
+    text-shadow:0 0 20px #00c6ff;
+}
+
+.reveal h2{
+    color:#ffd200;
+}
+
+.reveal p{
+    font-size:28px;
+}
+
+.caja{
+    background:rgba(255,255,255,0.12);
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 0 25px rgba(0,0,0,.4);
+    margin:20px;
+}
+
+.formula{
+    background:#111;
+    color:#00f260;
+    padding:20px;
+    border-radius:15px;
+    font-size:40px;
+    border:2px solid #00f260;
+}
+
+.paso{
+    background:linear-gradient(135deg,#8e2de2,#4a00e0);
+    padding:15px;
+    border-radius:15px;
+    margin:15px;
+}
+
+.ejemplo{
+    background:rgba(0,198,255,.15);
+    border-left:8px solid #00c6ff;
+    padding:20px;
+    border-radius:15px;
+}
+
+.respuesta{
+    background:rgba(0,242,96,.15);
+    border-left:8px solid #00f260;
+    padding:20px;
+    border-radius:15px;
+}
+
+.recordatorio{
+    background:rgba(255,210,0,.15);
+    border-left:8px solid #ffd200;
+    padding:20px;
+    border-radius:15px;
+}
+
+ul{
+    font-size:28px;
+}
+
+li{
+    margin:15px;
+}
+
+.icono{
+    font-size:70px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+<div class="slides">
+
+
+<!-- PORTADA -->
+
+<section>
+
+<div class="icono">📚</div>
+
+<h1>Casos de Factoreo</h1>
+
+<h2>Factor Común y Trinomio</h2>
+
+<div class="caja">
+<p>
+Aprenderemos a reconocer y resolver expresiones.
+</p>
+</div>
+
+</section>
+
+
+
+<!-- INTRO -->
+
+<section>
+
+<h2>¿Qué es factorizar?</h2>
+
+<div class="caja">
+
+<p>
+Factorizar es transformar una expresión algebraica en una multiplicación de factores.
+</p>
+
+<div class="formula">
+Expresión → Factores
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FACTOR COMUN -->
+
+<section>
+
+<h2>1. Factor Común</h2>
+
+<div class="caja">
+
+<p>
+Consiste en encontrar un número o variable que aparece en todos los términos.
+</p>
+
+<div class="formula">
+ab + ac = a(b+c)
+</div>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<h2>Pasos para resolver Factor Común</h2>
+
+<div class="paso">
+1️⃣ Buscar el factor que se repite.
+</div>
+
+<div class="paso">
+2️⃣ Dividir cada término entre ese factor.
+</div>
+
+<div class="paso">
+3️⃣ Escribir el factor común multiplicando el resultado.
+</div>
+
+</section>
+
+
+
+<section>
+
+<h2>Ejemplo 1</h2>
+
+<div class="ejemplo">
+
+<h3>
+6x² + 9x
+</h3>
+
+</div>
+
+
+<div class="paso">
+
+Paso 1:
+<br>
+Buscamos el factor común.
+
+<br><br>
+
+6x² y 9x tienen en común :
+
+<br>
+
+<strong>3x</strong>
+<br><br>
+
+ 6 y 9 tienen como divisor común al 3.
+
+<br>
+
+<br><br>
+
+
+
+<br>
+</div>
+
+</section>
+
+
+
+<section>
+
+<h2>Continuamos</h2>
+
+<div class="paso">
+
+Dividimos:
+
+<br><br>
+
+6x² ÷ 3x = 2x
+
+<br>
+
+9x ÷ 3x = 3
+
+</div>
+
+
+<div class="respuesta">
+
+Resultado:
+
+<br><br>
+
+<strong>
+3x(2x + 3)
+</strong>
+
+</div>
+
+</section>
+
+
+
+
+<!-- TRINOMIO -->
+
+<section>
+
+<h2>2. Trinomio</h2>
+
+<div class="caja">
+
+<p>
+Forma:
+</p>
+
+<div class="formula">
+
+x² + (a+b)x + ab
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<h2>¿Cómo reconocerlo?</h2>
+
+<div class="recordatorio">
+
+Debe tener:
+
+<ul>
+
+<li>Primer término: x²</li>
+
+<li>Segundo término: número acompañado de x</li>
+
+<li>Tercer término: número independiente</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+
+
+<section>
+
+<h2>Pasos del Trinomio</h2>
+
+
+<div class="paso">
+
+1️⃣ Buscar dos números que multiplicados den ab.
+
+</div>
+
+
+<div class="paso">
+
+2️⃣ Esos números deben sumar el coeficiente de x.
+
+</div>
+
+
+<div class="paso">
+
+3️⃣ Escribir los factores.
+
+</div>
+
+
+</section>
+
+
+
+
+<section>
+
+<h2>Ejemplo</h2>
+
+<div class="ejemplo">
+
+<h3>
+x² + 5x + 6
+</h3>
+
+</div>
+
+
+<div class="paso">
+
+Buscamos dos números:
+
+<br><br>
+
+Multiplicación:
+
+<br>
+2 × 3 = 6
+
+<br><br>
+
+Suma:
+
+<br>
+2 + 3 = 5
+
+</div>
+
+
+</section>
+
+
+
+
+<section>
+
+<h2>Resultado</h2>
+
+
+<div class="respuesta">
+
+Entonces:
+
+<br><br>
+
+x² + 5x + 6
+
+<br><br>
+
+=
+
+<br><br>
+
+<strong>
+(x+2)(x+3)
+</strong>
+
+</div>
+
+
+</section>
+
+
+
+
+<section>
+
+<h2>Otro ejemplo</h2>
+
+
+<div class="ejemplo">
+
+<h3>
+x² + 7x + 12
+</h3>
+
+</div>
+
+
+<div class="paso">
+
+Números que multiplican 12:
+
+<br><br>
+
+3 × 4 = 12
+
+<br><br>
+
+Suman:
+
+<br>
+
+3 + 4 = 7
+
+</div>
+
+
+<div class="respuesta">
+
+Resultado:
+
+<br>
+
+<strong>
+(x+3)(x+4)
+</strong>
+
+</div>
+
+
+</section>
+
+
+
+
+<section>
+
+<h2>Practica</h2>
+
+
+<div class="caja">
+
+<p>
+
+Factoriza:
+
+<br><br>
+
+1) 8x² + 12x
+
+<br><br>
+
+2) x² + 9x + 20
+
+<br><br>
+
+3) x² + 6x + 8
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<section>
+
+<h1>🎉 ¡Gracias por su atencion!</h1>
+
+<div class="caja">
+
+
+
+</div>
+
+
+<h2>Fin</h2>
+
+
+</section>
+
+
+
+</div>
+
+</div>
+
+
+
+<script src="dist/reveal.js"></script>
+
+<script>
+
+Reveal.initialize({
+
+hash:true,
+
+transition:'zoom',
+
+backgroundTransition:'fade'
+
+});
+
+</script>
+
+
+</body>
+</html>
